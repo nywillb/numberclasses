@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" rel="stylesheet" integrity="sha384-awusxf8AUojygHf2+joICySzB780jVvQaVCAt1clU3QsyAitLGul28Qxb2r1e5g+" crossorigin="anonymous">
+        <link href="index.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <form class="form-horizontal">
+            <fieldset>
+
+            <!-- Multiple Checkboxes -->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="meetingdays">My Class Meets On</label>
+            <div class="col-md-4">
+            <div class="checkbox">
+                <label for="meetingdays-0">
+                <input type="checkbox" name="meetingdays" id="meetingdays-0" value="mon">
+                Mondays
+                </label>
+                </div>
+            <div class="checkbox">
+                <label for="meetingdays-1">
+                <input type="checkbox" name="meetingdays" id="meetingdays-1" value="tue">
+                Tuesdays
+                </label>
+                </div>
+            <div class="checkbox">
+                <label for="meetingdays-2">
+                <input type="checkbox" name="meetingdays" id="meetingdays-2" value="wed">
+                Wednesdays
+                </label>
+                </div>
+            <div class="checkbox">
+                <label for="meetingdays-3">
+                <input type="checkbox" name="meetingdays" id="meetingdays-3" value="thu">
+                Thursdays
+                </label>
+                </div>
+            <div class="checkbox">
+                <label for="meetingdays-4">
+                <input type="checkbox" name="meetingdays" id="meetingdays-4" value="fri">
+                Fridays
+                </label>
+                </div>
+            </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="period">My Class Meets</label>
+            <div class="col-md-2">
+                <select id="period" name="period" class="form-control">
+                <option value="A">A Period</option>
+                <option value="B">B Period</option>
+                <option value="C">C Period</option>
+                <option value="D">D Period</option>
+                <option value="E">E Period</option>
+                <option value="F">F Period</option>
+                <option value="G">G Period</option>
+                <option value="H">H Period</option>
+                <option value="I">I Period</option>
+                </select>
+            </div>
+            </div>
+
+            <!-- Multiple Radios (inline) -->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="countfrom">Start Counting From</label>
+            <div class="col-md-4"> 
+                <label class="radio-inline" for="countfrom-0">
+                <input type="radio" name="countfrom" id="countfrom-0" value="today" checked="checked">
+                Today
+                </label> 
+                <label class="radio-inline" for="countfrom-1">
+                <input type="radio" name="countfrom" id="countfrom-1" value="beginning">
+                September
+                </label>
+            </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="submit">Press the button to start counting</label>
+            <div class="col-md-4">
+                <button id="submit" name="submit" class="btn btn-success">Let's Go!</button>
+            </div>
+            </div>
+
+            </fieldset>
+        </form>
+        <div id="results">
+            Press submit to show results.
+        </div>
+    </body>
+</html>
